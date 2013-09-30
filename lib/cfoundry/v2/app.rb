@@ -21,6 +21,7 @@ module CFoundry::V2
     to_one    :space
     attribute :environment_json, :hash,    :default => {}
     attribute :memory,           :integer, :default => 256
+    attribute :cpu_quota,        :string,  :default => "0.2"
     attribute :total_instances,  :integer, :default => 1, :at => :instances
     attribute :disk_quota,       :integer, :default => 256
     attribute :state,            :string,  :default => "STOPPED"
