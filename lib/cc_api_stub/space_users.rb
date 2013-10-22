@@ -1,5 +1,5 @@
 module CcApiStub
-  module OrganizationUsers
+  module SpaceUsers
     extend Helper
 
     class << self
@@ -20,7 +20,7 @@ module CcApiStub
       private
 
       def object_endpoint(id = nil, role="users")
-        %r{/v2/organizations/[^/]+/#{role}/#{id}[^/]+$}
+        %r{/v2/spaces/[^/]+/#{role}/#{id}[^/]+$}
       end
     end
   end
